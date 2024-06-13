@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Live Match Data</title>
+</head>
+<body>
+<div class="centered">
+    <img src="football-logo.png" alt="Your Logo" class="img-fluid" style="max-width: 100px;">
+    <h1 class="mt-3">Live Match Data</h1>
+</div>
+<hr>
+<div class="container mt-5">
+    <!-- Live match data display -->
+    <div id="live-match-data"></div>
+
+    <!-- Player statistics display -->
+    <div class="row">
+        <div class="col-md-12">
+            <div id="statistics"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div id="cards"></div>
+        </div>
+        <div class="col-md-6">
+            <div id="goalscorers"></div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for WebSocket connection and data rendering -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="container mt-5 col-md-4">
+    <canvas id="goalscorers-chart" width="500" height="200"></canvas>
+</div>
+
+</body>
+</html>

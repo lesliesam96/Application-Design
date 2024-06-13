@@ -1,0 +1,1 @@
+Just open the index.html file after you have started the backend, the frontend will form a websocket connection to the running backend and will start rendering the updates.
